@@ -24,6 +24,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -44,6 +45,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net40\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -63,6 +68,7 @@
   <ItemGroup>
     <Content Include="Default.aspx" />
     <Content Include="DropdownWithGroupItems.aspx" />
+    <Content Include="GoogleReCaptcha.aspx" />
     <Content Include="Practice.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
@@ -87,6 +93,13 @@
     </Compile>
     <Compile Include="DropdownWithGroupItems.aspx.designer.cs">
       <DependentUpon>DropdownWithGroupItems.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GoogleReCaptcha.aspx.cs">
+      <DependentUpon>GoogleReCaptcha.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GoogleReCaptcha.aspx.designer.cs">
+      <DependentUpon>GoogleReCaptcha.aspx</DependentUpon>
     </Compile>
     <Compile Include="Practice.aspx.cs">
       <DependentUpon>Practice.aspx</DependentUpon>
@@ -113,6 +126,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Site1.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
