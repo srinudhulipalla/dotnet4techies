@@ -70,6 +70,7 @@
     <Content Include="DropdownWithGroupItems.aspx" />
     <Content Include="GoogleReCaptcha.aspx" />
     <Content Include="Practice.aspx" />
+    <Content Include="References\jquery.accordion.2.0.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
