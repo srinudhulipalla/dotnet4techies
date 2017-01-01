@@ -3,27 +3,82 @@ ol.accordion {
     margin: 0;
     padding: 0;
 }
+
 .accordion li {
     list-style-type: none !important;
     margin: 0 !important;
     padding: 0;
 }
-.accordion li:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-    *zoom: 1;
-}
-.accordion li li {
-    list-style-type: disc;
-    margin-left: 1em;
-}
+
+    .accordion li:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+        *zoom: 1;
+    }
+
+    .accordion li li {
+        list-style-type: disc;
+        margin-left: 1em;
+    }
 /*.accordion a {
     color: inherit;
     text-decoration: inherit;
 }*/
 .accordion .loading {
     display: none;
+}
+
+
+/************************************************/
+
+.loading {
+    display: none;
+}
+
+.accordion {
+    border: 1px solid #ccc;
+    width: 99%;
+}
+
+    .accordion li h3 a {
+        background: #18222B;
+        background: #18222B -webkit-gradient(linear, left top, left bottom, from(#2c3e50), to(#18222B)) no-repeat;
+        background: #18222B -moz-linear-gradient(top, #2c3e50, #18222B) no-repeat;
+        border-bottom: 1px solid #2c3e50;
+        border-top: 1px solid #ccc;
+        color: #fff;
+        display: block;
+        font-style: normal;
+        margin: 0;
+        padding: 5px 10px;
+    }
+
+    .accordion li.active h3 a {
+        background: #27AE60;
+        background: #27AE60 -webkit-gradient(linear, left top, left bottom, from(#4AC125), to(#27AE60)) no-repeat;
+        background: #27AE60 -moz-linear-gradient(top, #4AC125, #27AE60) no-repeat;
+        border-bottom: 1px solid #4AC125;
+        border-top: 1px solid #9cf;
+    }
+
+    .accordion li h3 {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .accordion .panel {
+        padding: 10px;
+    }
+
+ul.accordion, ol.accordion {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.accordion > li:before {
+    content: "" !important;
+    margin-right: 0px !important;
 }
