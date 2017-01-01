@@ -20,10 +20,10 @@ ol.accordion {
     list-style-type: disc;
     margin-left: 1em;
 }
-.accordion a {
+/*.accordion a {
     color: inherit;
     text-decoration: inherit;
-}
+}*/
 .accordion .loading {
     display: none;
 }
