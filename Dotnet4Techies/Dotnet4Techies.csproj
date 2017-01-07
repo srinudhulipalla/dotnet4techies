@@ -69,6 +69,7 @@
     <Content Include="Default.aspx" />
     <Content Include="DropdownWithGroupItems.aspx" />
     <Content Include="GoogleReCaptcha.aspx" />
+    <Content Include="Pages\DownloadVisualStudio.html" />
     <Content Include="Practice.aspx" />
     <Content Include="References\css\accordion.core.css" />
     <Content Include="References\js\jquery.accordion.2.0.js" />
