@@ -25,6 +25,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -66,6 +67,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="CsharpTuples.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="DropdownWithGroupItems.aspx" />
     <Content Include="GoogleReCaptcha.aspx" />
@@ -83,6 +85,13 @@
     <Content Include="YouTube.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CsharpTuples.aspx.cs">
+      <DependentUpon>CsharpTuples.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CsharpTuples.aspx.designer.cs">
+      <DependentUpon>CsharpTuples.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
